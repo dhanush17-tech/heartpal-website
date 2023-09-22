@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* Reset default margin and padding */
+body, h1, p, div {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: grey;
+    background-color: rgb(247, 235, 235);
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh; /* Set the body's min-height to 100% of the viewport height */
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+}
+
+h1 {
+    font-size: 3.5rem;
+    font-weight: 600;
+    text-align: start; /* Center text within h1 */
+}
+
+span {
+    color: #ff999a;
+}
+
+.button {
+    display: inline-block;
+    background-color: #ff999a;
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 30px; /* Adjust padding for mobile */
+    font-weight: 600;
+    border-radius: .5rem;
+    transition: .3s;
+    margin-top: 20px;
+}
+
+.button:hover {
+    box-shadow: 0px 10px 36px #ff999b93;
+  }
+  
+   
+
+.data {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: start; /* Center text within data */
+    margin-top: 20px; /* Adjust spacing between h1 and .button */
+}
+
+.home__img {
+    max-width: 35%;  
+}
+
+/* ===== FOOTER =====*/
+.footer {
+     color: grey;
+    text-align: center;
+    font-weight: 400;
+    padding: 2rem 0;
+
+  }
+  
+  .footer__title {
+    font-size: 2rem;
+    font-weight: 100;
+
+  font-weight: 500;}
+  
+  .footer__social {
+    margin-bottom: var(--mb-4);
+    margin-top: 10px;
+  }
+  
+  .footer__icon {
+    font-size: 1.5rem;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: grey;
+    margin: 0 var(--mb-2);
+  }
+  
+  .footer__copy {
+    font-size: var(--smaller-font-size);
+  }
+
+@media screen and (max-width: 968px) {
+
+    h1 {
+        font-size: 2rem; /* Decrease font size for smaller screens */
+        text-align: center;
+    }
+    .data{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    /* .home__img{
+ margin-bottom: 0;
+padding-bottom: 0;
+    } */
+
+    .button {   
+        padding: 10px 20px; /* Adjust padding for smaller screens */
+    }
+    .footer{
+        margin-top: 20px;
+    }
+    .footer__title{
+        font-size: 20px;
+    }
+}
+
+
+@media screen and (max-width: 450px) {
+
+    h1 {
+        font-size: 1.5rem; /* Decrease font size for smaller screens */
+        text-align: center;
+    }
+    
+}
